@@ -1,3 +1,9 @@
+# ewt
+.ipynb_checkpoints/
+.pytest_cache/
+.vscode/
+pangadfs.egg-info/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -102,7 +108,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/

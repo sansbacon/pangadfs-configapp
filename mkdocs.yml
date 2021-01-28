@@ -1,0 +1,28 @@
+# site configuration
+site_name: pangadfs-configapp
+site_url: https://sansbacon.github.io/pangadfs-configapp/
+site_description: structured configuration for pangadfs
+site_author: Eric Truett
+repo_url: https://github.com/sansbacon/pangadfs-configapp
+
+theme:
+  name: material
+
+plugins:
+  - search
+  - mkdocstrings
+
+markdown_extensions:
+- toc:
+    permalink: true
+- admonition
+- codehilite
+- extra
+- pymdownx.superfences
+- pymdownx.tabbed
+
+nav:
+- pangadfs-configapp: index.md
+- Code Reference:
+    - optimize: optimize-reference.md
+    - gasettings: gasettings-reference.md
