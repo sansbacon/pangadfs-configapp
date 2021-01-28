@@ -1,1 +1,3 @@
-::: pangadfs_configapp.gasettings
+# GASettings Reference
+
+To be developed . . . problems with autodocumentation.
