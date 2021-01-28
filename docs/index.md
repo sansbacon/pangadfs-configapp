@@ -1,6 +1,7 @@
 pangadfs is a pandas-based (python) genetic algorithm framework for fantasy sports. It uses a plugin architecture to enable maximum flexibility while also providing a fully-functional implementation of a genetic algorithm for lineup optimization.
 
-pangadfs-configapp is a plugin that provides for structured configuration of pangadfs applications.
+pangadfs-configapp is a plugin that provides for structured configuration of pangadfs applications. Specifically, it offers an OptimizeConfig in the pangadfs.optimize namespace to coordinate the steps of lineup optimization using an AppSettings object.
+
 ---
 
 **Documentation**: <a href="https://sansbacon.github.io/pangadfs-configapp/">https://sansbacon.github.io/pangadfs-configapp/</a>
@@ -9,7 +10,7 @@ pangadfs-configapp is a plugin that provides for structured configuration of pan
 
 ---
 
-The key pangadfs-configapp feature is that it uses python dataclasses to provide structured configuration for pangadfs apps. The basic app example in pangadfs uses a dictionary, which is not as robust because it does not require certain keys to be present and that they have specific types.
+The key pangadfs-configapp feature is that it uses python dataclasses to provide structured configuration for pangadfs apps. The basic app example in pangadfs uses a dictionary, which is not as robust because it does not require certain keys to be present and that they have specific types. Pangadfs-configapp uses the dacite library to create a configuration object from an ordinary dictionary while supplying sensible defaults for all missing values.
 
 
 ## Requirements
